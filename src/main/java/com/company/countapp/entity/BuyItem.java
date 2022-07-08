@@ -4,12 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class BuyItem {
 
-    CanalItem canalItem;
+    UUID canalId;
 
     Integer count;
+
+    UUID lengthId;
+
+    Double length;
 }
